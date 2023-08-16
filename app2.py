@@ -8,6 +8,9 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 
 
+from flask import Flask
+app2 = Flask(__name__)
+
 spacex_df = pd.read_csv("spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
