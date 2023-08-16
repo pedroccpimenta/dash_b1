@@ -2,3 +2,4 @@ dash
 pandas
 plotly
 flask
+gunicorn==19.7.1
